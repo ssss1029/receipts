@@ -1,12 +1,22 @@
 #!/usr/bin/env node
 
 /**
+ * Set up environment variables
+ */
+var environment = require('../config');
+for (var key in environment) {
+  process.env[key] = environment[key];
+}
+
+
+/**
  * Module dependencies.
  */
 
 var app = require('../app');
-var debug = require('debug')('receipt:server');
+var debug = require('debug')('receipt:./bin/www');
 var http = require('http');
+
 
 /**
  * Get port from environment and store in Express.
