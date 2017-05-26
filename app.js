@@ -4,11 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var busboy = require('connect-busboy');
-
-var process_path  = require('./routes/process/index');
-var results_path  = require('./routes/results/index');
-
 var app = express();
+var debug = require('debug')("receipt:app.js");
+var User = require('./schemas/user');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,8 +20,9 @@ app.use(busboy({ immediate: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/process', process_path);
-app.use('/results', results_path);
+// Routes
+app.use('/process', require('./routes/process/index'));
+app.use('/results', require('./routes/results/index'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -41,5 +41,21 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// Handle development settings
+if (global.environment.TEST_USERS !== undefined) {
+  // put in the users and passwords
+  for (var user in global.environment.TEST_USERS) {
+    console.log(user);
+    var curr_user = new User(global.environment.TEST_USERS[user]);
+    curr_user.save(function (err, curr_user) {
+      if (err) {
+        debug("ERROR while saving new user object.");
+      } else {
+        debug("User created: " + curr_user.firstName + " " + curr_user.lastName);
+      }
+    });
+  }
+}
 
 module.exports = app;

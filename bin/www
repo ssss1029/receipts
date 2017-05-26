@@ -3,11 +3,12 @@
 /**
  * Set up environment variables
  */
-var environment = require('../config');
-for (var key in environment) {
-  process.env[key] = environment[key];
-}
+global.environment = require('../config');
 
+var temp_env = require('../process.env-addons');
+for (var item in temp_env) {
+  process.env[item] = temp_env[item];
+}
 
 /**
  * Module dependencies.
@@ -98,3 +99,20 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+/**
+ * Connect to Mongo and set that up
+ */
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/receipt');
+
+var db = mongoose.connection;
+
+db.on('error', function(err) {
+  debug("MONGO ERROR: " + err);
+});
+
+db.once('open', function() {
+  // Connected
+  debug("Connected to MongoDB successfully");
+});

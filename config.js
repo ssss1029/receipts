@@ -1,9 +1,24 @@
 
 /**
- * Everything on here is added to process.env on startup
+ * Everything on here is added to gloabl.environment on startup
+ * only used for objects and dev things (i.e. not for deployment things that we prolly will need)
  */
 
 module.exports =  {
-	'DEBUG' : 'receipt:*',
-	'VISION_API_KEY': 'AIzaSyBdCaIqbVKAA78Y_29C5FL1qYDrnLoEQSM'
+	// If this field exists, these users are pre-populated into the database for development
+	'TEST_USERS' : {
+		"janeDoe" : {
+			'username' : 'janeDoe',
+			'password' : 'development',
+			'firstName' : 'Jane',
+			'lastName' : 'Doe'
+		},
+
+		"johnDoe" : {
+			'username' : 'johnDoe',
+			'password' : 'development',
+			'firstName' : 'John',
+			'lastName' : 'Doe'
+		}
+	},
 }
