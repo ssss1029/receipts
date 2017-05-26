@@ -42,6 +42,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+
 // Handle development settings
 if (global.environment.TEST_USERS !== undefined) {
   // put in the users and passwords
@@ -53,6 +55,8 @@ if (global.environment.TEST_USERS !== undefined) {
       console.log(err);
     });
   }
+
+  
 }
 
 module.exports = app;
