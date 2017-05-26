@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.use('/process', require('./routes/process/index'));
 app.use('/results', require('./routes/results/index'));
+app.use('/results', require('./routes/user'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -56,7 +57,7 @@ if (global.environment.TEST_USERS !== undefined) {
     });
   }
 
-  
+
 }
 
 module.exports = app;
