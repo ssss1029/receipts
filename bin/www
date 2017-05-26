@@ -103,9 +103,11 @@ function onListening() {
 /**
  * Connect to Mongo and set that up
  */
+// Use BlurBird as the Promise thingy
+var uri = 'mongodb://localhost/receipt';
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/receipt');
-
+mongoose.Promise = require('bluebird');
+mongoose.connect(uri);
 var db = mongoose.connection;
 
 db.on('error', function(err) {

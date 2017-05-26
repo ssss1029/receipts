@@ -46,14 +46,11 @@ app.use(function(err, req, res, next) {
 if (global.environment.TEST_USERS !== undefined) {
   // put in the users and passwords
   for (var user in global.environment.TEST_USERS) {
-    console.log(user);
     var curr_user = new User(global.environment.TEST_USERS[user]);
-    curr_user.save(function (err, curr_user) {
-      if (err) {
-        debug("ERROR while saving new user object.");
-      } else {
-        debug("User created: " + curr_user.firstName + " " + curr_user.lastName);
-      }
+    curr_user.save().then(function(curr_user) {
+      debug("Created new user: " + curr_user.firstName + " " + curr_user.lastName);
+    }).catch(function(err) {
+      console.log(err);
     });
   }
 }
