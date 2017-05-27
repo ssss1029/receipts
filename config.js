@@ -21,4 +21,8 @@ module.exports =  {
 			'lastName' : 'Doe'
 		}
 	},
+
+	// If this is true, then set the value of global.outerDirName to the value of __dirname in the app.js file
+	'SET_GLOBAL_OUTER_DIRNAME' : true
+
 }

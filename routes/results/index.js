@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var debug = require('debug')('receipt:results');
+var https = require('https');
+var querystring = require('querystring');
+var fs = require('fs');
+
 
 /* Post from the form on /process */
 router.post('/', function(req, res, next) {
@@ -13,23 +17,71 @@ router.post('/', function(req, res, next) {
 			debug("encoding: " + encoding);
 			debug("mimetype: " + mimetype);
 
-			var  fileData = "";
+			var savedFileName = "uploads/" + filename;
+			console.log("savedFileName: " + savedFileName);
+			file.pipe(fs.createWriteStream(savedFileName));
 
-			file.on('data', function(data) {
-        		debug("Data received from filename: " + filename + " from field: " + fieldname);
-        		fileData = fileData + data.toString('utf8');
-      		});
-			
 			file.on('end', function() {
 		    	debug('File [' + fieldname + '] Finished');
-		    	processFile(fileData, req, res, next);
+		    	processFile(filename, req, res, next);
 		    });
 		});
 	}
 });
 
-function processFile(fileData, req, res, next) {
-	res.render('results', {dataReceived : fileData});
+function processFile(savedFileName, req, res, next) {
+	sendToGoogle(savedFileName, req, res, next);
+	res.render('results', {dataReceived : savedFileName});
+}
+
+function sendToGoogle(savedFileName, req, res, next) {
+
+	function callback(response) {
+		var str = '';
+
+		//another chunk of data has been recieved, so append it to `str`
+		response.on('data', function (chunk) {
+			str += chunk;
+		});
+
+		//the whole response has been recieved, so we just print it out here
+		response.on('end', function () {
+			console.log(str);
+		});
+	}
+
+	console.log("BEFORE");
+	console.log(fs.readFileSync( "uploads\\" + savedFileName, 'base64'));
+	console.log("AFTER");
+
+	var body = {
+		"requests":[{
+			"image":{
+				"content": fs.readFileSync( "uploads\\" + savedFileName, 'base64')
+			},
+			
+			"features":[{
+				"type":"TEXT_DETECTION",
+				"maxResults":1
+			}]
+		}]
+	}
+
+	body = JSON.stringify(body);
+
+	var options = {
+		method: 'POST',
+		host: 'vision.googleapis.com',
+		path: '/v1/images:annotate?key=' + process.env.VISION_API_KEY,
+		headers: {
+			'Content-Type' : "application/json",
+			'Content-Length' : Buffer.byteLength(body)
+		}
+	};
+
+	var request = https.request(options, callback);
+	request.write(body);
+
 }
 
 module.exports = router;

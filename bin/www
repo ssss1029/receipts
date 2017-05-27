@@ -3,8 +3,11 @@
 /**
  * Set up environment variables
  */
+
+// global.environment 
 global.environment = require('../config');
 
+// process.env
 var temp_env = require('../process.env-addons');
 for (var item in temp_env) {
   process.env[item] = temp_env[item];

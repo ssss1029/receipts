@@ -56,8 +56,10 @@ if (global.environment.TEST_USERS !== undefined) {
       console.log(err);
     });
   }
+}
 
-
+if (global.environment.SET_GLOBAL_OUTER_DIRNAME === true) {
+  global.environment.OUTER_DIRNAME = __dirname;
 }
 
 module.exports = app;
