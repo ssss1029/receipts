@@ -18,7 +18,6 @@ router.post('/', function(req, res, next) {
 			debug("mimetype: " + mimetype);
 
 			var savedFileName = "uploads/" + filename;
-			console.log("savedFileName: " + savedFileName);
 			file.pipe(fs.createWriteStream(savedFileName));
 
 			file.on('end', function() {
@@ -39,6 +38,9 @@ function sendToGoogle(savedFileName, req, res, next) {
 	function callback(response) {
 		var str = '';
 
+		// Save it into a file to debug
+		response.pipe(fs.createWriteStream("uploads/" + savedFileName + ".json"));
+
 		//another chunk of data has been recieved, so append it to `str`
 		response.on('data', function (chunk) {
 			str += chunk;
@@ -49,10 +51,6 @@ function sendToGoogle(savedFileName, req, res, next) {
 			console.log(str);
 		});
 	}
-
-	console.log("BEFORE");
-	console.log(fs.readFileSync( "uploads\\" + savedFileName, 'base64'));
-	console.log("AFTER");
 
 	var body = {
 		"requests":[{
