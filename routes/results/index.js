@@ -4,6 +4,8 @@ var debug = require('debug')('receipt:results');
 var https = require('https');
 var querystring = require('querystring');
 var fs = require('fs');
+var WritableStream = require('stream').Writable;
+
 
 
 /* Post from the form on /process */
@@ -18,6 +20,7 @@ router.post('/', function(req, res, next) {
 			debug("mimetype: " + mimetype);
 
 			var savedFileName = "uploads/" + filename;
+			
 			file.pipe(fs.createWriteStream(savedFileName));
 
 			file.on('end', function() {
@@ -27,6 +30,7 @@ router.post('/', function(req, res, next) {
 		});
 	}
 });
+
 
 function processFile(savedFileName, req, res, next) {
 	sendToGoogle(savedFileName, req, res, next);
@@ -49,8 +53,12 @@ function sendToGoogle(savedFileName, req, res, next) {
 		//the whole response has been recieved, so we just print it out here
 		response.on('end', function () {
 			console.log(str);
+			processResponse(str);
 		});
 	}
+
+	// If i dont wanna send to google for testing purpouses
+	// return;
 
 	var body = {
 		"requests":[{
@@ -79,7 +87,12 @@ function sendToGoogle(savedFileName, req, res, next) {
 
 	var request = https.request(options, callback);
 	request.write(body);
+}
 
+function processResponse(str) {
+	var data = JSON.parse(str);
+	
 }
 
 module.exports = router;
+
