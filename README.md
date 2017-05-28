@@ -11,3 +11,8 @@ npm install
 node serve
 ```
 
+You can also use nodemon to run the server, but ignoring the uploads directory
+
+```
+nodemon serve --ignore uploads
+```
