@@ -37,8 +37,6 @@ router.post('/', function(req, res, next) {
 	}
 });
 
-
-
 function processFile(savedFileName, req, res, next) {
 	sendToGoogle(savedFileName, req, res, next);
 	res.render('results', {dataReceived : savedFileName});
@@ -96,10 +94,22 @@ function sendToGoogle(savedFileName, req, res, next) {
 	request.write(body);
 }
 
+/**
+ * Takes in the string of data from Google and analyzes it
+ **/
 function processResponse(str) {
 	var data = JSON.parse(str);
 
+	return str;
 }
+
+// Is a test endpoint to see what we can do using the data that was
+// received from a particular file (safeway_08_06_10.jpg)
+router.get('/testUsing-safeway_08_06_10-contents', function(req, res, next) {
+	res.render('results', { 
+		dataReceived : processResponse(fs.readFileSync("uploads/safeway_08_06_10.jpg.json"))
+	});
+});
 
 module.exports = router;
 
