@@ -23,6 +23,12 @@ router.post('/', function(req, res, next) {
 			
 			file.pipe(fs.createWriteStream(savedFileName));
 
+			var fileContents = "";
+
+			file.on('data', function(buffer) {
+				fileContents += buffer.toString('base64');
+			});
+
 			file.on('end', function() {
 		    	debug('File [' + fieldname + '] Finished');
 		    	processFile(filename, req, res, next);
@@ -32,10 +38,12 @@ router.post('/', function(req, res, next) {
 });
 
 
+
 function processFile(savedFileName, req, res, next) {
 	sendToGoogle(savedFileName, req, res, next);
 	res.render('results', {dataReceived : savedFileName});
 }
+
 
 function sendToGoogle(savedFileName, req, res, next) {
 
@@ -52,13 +60,12 @@ function sendToGoogle(savedFileName, req, res, next) {
 
 		//the whole response has been recieved, so we just print it out here
 		response.on('end', function () {
-			console.log(str);
+			debug("Data Received from Google. Beginning Processing.");
 			processResponse(str);
 		});
 	}
 
 	// If i dont wanna send to google for testing purpouses
-	// return;
 
 	var body = {
 		"requests":[{
@@ -91,7 +98,7 @@ function sendToGoogle(savedFileName, req, res, next) {
 
 function processResponse(str) {
 	var data = JSON.parse(str);
-	
+
 }
 
 module.exports = router;
