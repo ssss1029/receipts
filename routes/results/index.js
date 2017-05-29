@@ -157,7 +157,7 @@ function processResponse(str) {
 		} else {
 			// Add current Line to lineList if that Line is finished, and make a new Line with the current Block
 			// Otherwise, add the current Block to the lineList
-			console.log("block.MidY: " + blockMidY + ", previousMidY: " + previousMidY + ", bufferWidth: " + bufferWidth);
+			console.log(currString + " => block.MidY: " + blockMidY + ", previousMidY: " + previousMidY + ", bufferWidth: " + bufferWidth);
 			if (blockMidY < previousMidY + bufferWidth && blockMidY > previousMidY - bufferWidth ) {
 				// line is not finished
 				currLine.push(block);
