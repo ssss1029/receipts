@@ -106,32 +106,86 @@ function processResponse(str) {
 	// rest of it
 	var textAnnotations = data.responses.textAnnotations;
 
-	for (var i = 0; i < textAnnotations.length; i++) {
+	var imageTopY = textAnnotations[0].boundingPoly.vertices[0].y;
+	var imageBottomY = textAnnotations[0].boundingPoly.vertices[2].y;
+	var imageLeftX = textAnnotations[0].boundingPoly.vertices[0].x;
+	var imageRightX = textAnnotations[0].boundingPoly.vertices[2].x;
 
+	var imageWidth = imageRightX - imageLeftX;
+	var imageHeight = imageBottomY - imageTopY;
+
+	var arrayOfLines = new Array();
+
+	// Skip the first block (was for the entire image)
+	// Make the Image();
+	var previousMidY;
+	var bufferWidth;
+	var currLine;
+	var lineList = new Array();
+	for (var i = 1; i < textAnnotations.length; i++) {
+		let unprocessedBlock = textAnnotations[i];
+		let currString = unprocessedBlock.description;
+		let blockTopY = unprocessedBlock.vertices[0].y;
+		let blockLeftX = unprocessedBlock.vertices[0].x;
+		let blockRightX = unprocessedBlock.vertices[2].x;
+		let blockBottomY = unprocessedBlock.vertices[2].y;
+
+		// Averages
+		let blockMidX = (blockLeftX + blockRightX) / 2;
+		let blockMidY = (blockTopY + blockBottomY) / 2;
+
+		// W&H
+		let blockWidth = blockRightX - blockLeftX;
+		let blockHeight = blockBottomY = blockTopY;
+
+		var block = new Block(currString, blockMidX, blockMidY, blockTopY, blockBottomY, blockLeftX, blockRightX, blockWidth, blockHeight);
+
+		// Add current Line to lineList if that Line is finished, and make a new Line with the current Block
+		// Otherwise, add the current Block to the lineList
+
+		
 	}
 
 	return str;
 }
 
-class Line {
-	constructor() {
-		// Make an empty line
+class Image {
+	constructor(arrayOfLines, topY, bottomY, leftX, rightX) {
+		this._arrayOfLines = arrayOfLines;
+		this._topY = topY;
+		this._bottomY = bottomY;
+		this._leftX = leftX;
+		this._rightX = rightX;
 	}
+}
 
-	// Array has to be an array of nodes
-	constructor(array) {
-
+class Line {
+	constructor(arrayOfBlocks) {
+		this._arrayOfBlocks = arrayOfBlocks;
 	}
 }
 
 // A block is one of the basic building blocks that google gives back
 
-class TextBlock {
-	
+class Block {
+	 constructor(contentString, midX, midY, topY, bottomY, leftX, rightX, width, height) {
+		 this._contents = contentString;
+		 this._midX = midX;
+		 this._midY = midY;
+		 this._topY = topY;
+		 this._bottomY = bottomY;
+		 this._leftX = leftX;
+		 this._rightX = rightX;
+		 this._height = height;
+	 }
 }
 
-class PriceBlock {
-	
+class TextBlock extends Block{
+	// Will implement later	
+}
+
+class PriceBlock extends Block{
+	// Will implement later
 }
 
 // Is a test endpoint to see what we can do using the data that was
