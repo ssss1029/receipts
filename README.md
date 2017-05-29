@@ -43,4 +43,5 @@ app.use(function(err, req, res, next) {
 });
 ```
 
+
 Errors are not displaying without the if case in the middle. Tried debugging, haven't figured out why its doing that yet (5/28/2017)
