@@ -99,8 +99,33 @@ function sendToGoogle(savedFileName, req, res, next) {
  **/
 function processResponse(str) {
 	var data = JSON.parse(str);
+	
+	// Note we only use this portion of the return from google
+	// Need to figure out how to tell google to not send us the 
+	// rest of it
+	var textAnnotations = data.responses.textAnnotations;
+
+	for (var i = 0; i < textAnnotations.length; i++) {
+
+	}
 
 	return str;
+}
+
+class Line {
+	constructor() {
+		// Make an empty line
+	}
+
+	// Array has to be an array of nodes
+	constructor(array) {
+
+	}
+}
+
+// A block is one of the basic building blocks that google gives back
+class Block {
+	
 }
 
 // Is a test endpoint to see what we can do using the data that was
