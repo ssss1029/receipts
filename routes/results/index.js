@@ -107,12 +107,16 @@ function sendToGoogle(savedFileName, req, res, next) {
 function processResponse(str) {
 	var data = JSON.parse(str);
 	
+	
 	// We only use this portion of the return from google
 	// Need to figure out how to tell google to not send us the 
 	// rest of it
 	var textAnnotations = data.responses.textAnnotations;
 
+	console.log("one");
 	var imageTopY = textAnnotations[0].boundingPoly.vertices[0].y;
+	console.log("two");
+
 	var imageBottomY = textAnnotations[0].boundingPoly.vertices[2].y;
 	var imageLeftX = textAnnotations[0].boundingPoly.vertices[0].x;
 	var imageRightX = textAnnotations[0].boundingPoly.vertices[2].x;
@@ -128,6 +132,7 @@ function processResponse(str) {
 	var bufferWidth;
 	var currLine; // Array of Block objects, not a Line object
 	var lineList = new Array();
+
 	for (var i = 1; i < textAnnotations.length; i++) {
 		let unprocessedBlock = textAnnotations[i];
 		let currString = unprocessedBlock.description;
@@ -232,8 +237,17 @@ class PriceBlock extends Block{
 // Is a test endpoint to see what we can do using the data that was
 // received from a particular file (safeway_08_06_10.jpg)
 router.get('/testUsing-safeway_08_06_10-contents', function(req, res, next) {
+	debug("Beginning rendering");
+
+	console.log("beginning file read");
+	var fileData = fs.readFileSync("uploads/safeway_08_06_10.jpg.json");
+	console.log("beginning processResponse() original");
+	var dataToSend = processResponse(fileData);
+	console.log("beginning render");
 	res.render('results', { 
-		dataReceived : processResponse(fs.readFileSync("uploads/safeway_08_06_10.jpg.json"))
+		dataReceived : dataToSend
+	}, function() {
+		debug("Done rendering");
 	});
 });
 

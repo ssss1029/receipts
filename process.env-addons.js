@@ -9,5 +9,7 @@ module.exports = {
 	'DEBUG' : 'receipt:*',
 
 	// Google API key
-	'VISION_API_KEY': 'AIzaSyBdCaIqbVKAA78Y_29C5FL1qYDrnLoEQSM'
+	'VISION_API_KEY': 'AIzaSyBdCaIqbVKAA78Y_29C5FL1qYDrnLoEQSM',
+
+	'NODE_ENV' : 'development'
 }
