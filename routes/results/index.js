@@ -16,14 +16,9 @@ var WritableStream = require('stream').Writable;
 
 /* Post from the form on /process */
 router.post('/', function(req, res, next) {
+	debug("beginning processing");
 	if (req.busboy) {
-		debug("BusBoy detected");
 		req.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-			debug("fieldname: " + fieldname);
-			debug("file: " + file);
-			debug("filename: " + filename);
-			debug("encoding: " + encoding);
-			debug("mimetype: " + mimetype);
 
 			var savedFileName = "uploads/" + filename;
 			
@@ -36,7 +31,7 @@ router.post('/', function(req, res, next) {
 			});
 
 			file.on('end', function() {
-		    	debug('File [' + fieldname + '] Finished');
+				debug("Done saving file on our server.");
 		    	processFile(filename, req, res, next);
 		    });
 		});
@@ -71,10 +66,14 @@ function sendToGoogle(savedFileName, req, res, next) {
 
 	// If i dont wanna send to google for testing purpouses
 
+	var imageFileContents = fs.readFileSync( "uploads\\" + savedFileName, 'base64');
+
+	debug("Done reading file from our server");
+
 	var body = {
 		"requests":[{
 			"image":{
-				"content": fs.readFileSync( "uploads\\" + savedFileName, 'base64')
+				"content": imageFileContents
 			},
 			
 			"features":[{
@@ -157,7 +156,7 @@ function processResponse(str) {
 		} else {
 			// Add current Line to lineList if that Line is finished, and make a new Line with the current Block
 			// Otherwise, add the current Block to the lineList
-			console.log(currString + " => block.MidY: " + blockMidY + ", previousMidY: " + previousMidY + ", bufferWidth: " + bufferWidth);
+			// console.log(currString + " => block.MidY: " + blockMidY + ", previousMidY: " + previousMidY + ", bufferWidth: " + bufferWidth);
 			if (blockMidY < previousMidY + bufferWidth && blockMidY > previousMidY - bufferWidth ) {
 				// line is not finished
 				currLine.push(block);
@@ -177,8 +176,10 @@ function processResponse(str) {
 	}
 
 	var image = new Image(lineList, imageTopY, imageBottomY, imageLeftX, imageRightX);
-
-	return image.toString();
+	var returnString = image.toString();
+	debug("Done processing");
+	console.log(returnString);
+	return returnString;
 }
 
 function sortBlocksBasedOnX(arrayOfBlocks) {
@@ -261,6 +262,7 @@ router.get('/testUsing-safeway_08_06_10-contents', function(req, res, next) {
 		if (err) {
 			debug("ERROR: " + err);
 		} else {
+			debug("Done rendering");
 			res.send(html);
 		}
 	});
