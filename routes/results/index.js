@@ -96,11 +96,12 @@ function sendToGoogle(savedFileName, req, res, next) {
 
 /**
  * Takes in the string of data from Google and analyzes it
+ * See /uploads for exmaple return data from google
  **/
 function processResponse(str) {
 	var data = JSON.parse(str);
 	
-	// Note we only use this portion of the return from google
+	// We only use this portion of the return from google
 	// Need to figure out how to tell google to not send us the 
 	// rest of it
 	var textAnnotations = data.responses.textAnnotations;
@@ -124,7 +125,12 @@ class Line {
 }
 
 // A block is one of the basic building blocks that google gives back
-class Block {
+
+class TextBlock {
+	
+}
+
+class PriceBlock {
 	
 }
 
@@ -137,4 +143,3 @@ router.get('/testUsing-safeway_08_06_10-contents', function(req, res, next) {
 });
 
 module.exports = router;
-
