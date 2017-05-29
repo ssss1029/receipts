@@ -6,7 +6,13 @@ var querystring = require('querystring');
 var fs = require('fs');
 var WritableStream = require('stream').Writable;
 
-
+/**
+ * Current implementation is inefficient because im piping to save to the server 
+ * and then re-reading the saved file and sending that to google.
+ * 
+ * When i try to save and send the file simultaneously, something goes wrong with the 
+ * encoding, idk what is wrong yet. 
+ */
 
 /* Post from the form on /process */
 router.post('/', function(req, res, next) {
@@ -120,7 +126,7 @@ function processResponse(str) {
 	// Make the Image();
 	var previousMidY;
 	var bufferWidth;
-	var currLine;
+	var currLine; // Array of Block objects, not a Line object
 	var lineList = new Array();
 	for (var i = 1; i < textAnnotations.length; i++) {
 		let unprocessedBlock = textAnnotations[i];
@@ -140,13 +146,33 @@ function processResponse(str) {
 
 		var block = new Block(currString, blockMidX, blockMidY, blockTopY, blockBottomY, blockLeftX, blockRightX, blockWidth, blockHeight);
 
-		// Add current Line to lineList if that Line is finished, and make a new Line with the current Block
-		// Otherwise, add the current Block to the lineList
-
-		
+		// Just starting out
+		if (previousMidY == undefined) {
+			currLine.push(block);
+			previousMidY = blockMidY;
+			bufferWidth = blockHeight / 2;
+		} else {
+			// Add current Line to lineList if that Line is finished, and make a new Line with the current Block
+			// Otherwise, add the current Block to the lineList
+			if (block.midY < previousMidY + bufferWidth && block.midY > previousMidY - bufferWidth ) {
+				// line is not finished
+				currLine.push(block);
+				previousMidY = blockMidY;
+				bufferWidth = blockHeight / 2;
+			} else {
+				var completedLine = new Line(currLine);
+				lineList.push(completedLine);
+				currLine = new Array();
+				currLine.push(block);
+				previousMidY = blockMidY;
+				bufferWidth = blockHeight / 2;
+			}
+		}
 	}
 
-	return str;
+	var image = new Image(lineList, imageTopY, imageBottomY, imageLeftX, imageRightX);
+
+	return image.toString();
 }
 
 class Image {
@@ -156,6 +182,21 @@ class Image {
 		this._bottomY = bottomY;
 		this._leftX = leftX;
 		this._rightX = rightX;
+	}
+
+	// mainly for testing purpouses
+	toString() {
+		var returnString = "";
+		for (var l = 0; l < this._arrayOfLines.length; l++) {
+			returnString += "New Line: ";
+			for (var b = 0; b < this._arrayOfLines[l]._arrayOfBlocks.length; b++) {
+				returnString += this._arrayOfLines[l]._arrayOfBlocks[b]._contents + " ";
+			}
+
+			returnString += "\n";
+		}
+
+		return returnString;
 	}
 }
 
