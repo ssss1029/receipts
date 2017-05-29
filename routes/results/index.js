@@ -111,11 +111,9 @@ function processResponse(str) {
 	// We only use this portion of the return from google
 	// Need to figure out how to tell google to not send us the 
 	// rest of it
-	var textAnnotations = data.responses.textAnnotations;
+	var textAnnotations = data.responses[0].textAnnotations;
 
-	console.log("one");
 	var imageTopY = textAnnotations[0].boundingPoly.vertices[0].y;
-	console.log("two");
 
 	var imageBottomY = textAnnotations[0].boundingPoly.vertices[2].y;
 	var imageLeftX = textAnnotations[0].boundingPoly.vertices[0].x;
@@ -130,16 +128,16 @@ function processResponse(str) {
 	// Make the Image();
 	var previousMidY;
 	var bufferWidth;
-	var currLine; // Array of Block objects, not a Line object
+	var currLine = new Array(); // Array of Block objects, not a Line object
 	var lineList = new Array();
 
 	for (var i = 1; i < textAnnotations.length; i++) {
 		let unprocessedBlock = textAnnotations[i];
 		let currString = unprocessedBlock.description;
-		let blockTopY = unprocessedBlock.vertices[0].y;
-		let blockLeftX = unprocessedBlock.vertices[0].x;
-		let blockRightX = unprocessedBlock.vertices[2].x;
-		let blockBottomY = unprocessedBlock.vertices[2].y;
+		let blockTopY = unprocessedBlock.boundingPoly.vertices[0].y;
+		let blockLeftX = unprocessedBlock.boundingPoly.vertices[0].x;
+		let blockRightX = unprocessedBlock.boundingPoly.vertices[2].x;
+		let blockBottomY = unprocessedBlock.boundingPoly.vertices[2].y;
 
 		// Averages
 		let blockMidX = (blockLeftX + blockRightX) / 2;
@@ -147,7 +145,7 @@ function processResponse(str) {
 
 		// W&H
 		let blockWidth = blockRightX - blockLeftX;
-		let blockHeight = blockBottomY = blockTopY;
+		let blockHeight = blockBottomY - blockTopY;
 
 		var block = new Block(currString, blockMidX, blockMidY, blockTopY, blockBottomY, blockLeftX, blockRightX, blockWidth, blockHeight);
 
@@ -159,7 +157,8 @@ function processResponse(str) {
 		} else {
 			// Add current Line to lineList if that Line is finished, and make a new Line with the current Block
 			// Otherwise, add the current Block to the lineList
-			if (block.midY < previousMidY + bufferWidth && block.midY > previousMidY - bufferWidth ) {
+			console.log("block.MidY: " + blockMidY + ", previousMidY: " + previousMidY + ", bufferWidth: " + bufferWidth);
+			if (blockMidY < previousMidY + bufferWidth && blockMidY > previousMidY - bufferWidth ) {
 				// line is not finished
 				currLine.push(block);
 				previousMidY = blockMidY;
@@ -198,7 +197,7 @@ class Image {
 				returnString += this._arrayOfLines[l]._arrayOfBlocks[b]._contents + " ";
 			}
 
-			returnString += "\n";
+			returnString += "\r\n"; // <br /> added to make displaying on webpage better
 		}
 
 		return returnString;
@@ -239,15 +238,15 @@ class PriceBlock extends Block{
 router.get('/testUsing-safeway_08_06_10-contents', function(req, res, next) {
 	debug("Beginning rendering");
 
-	console.log("beginning file read");
 	var fileData = fs.readFileSync("uploads/safeway_08_06_10.jpg.json");
-	console.log("beginning processResponse() original");
 	var dataToSend = processResponse(fileData);
-	console.log("beginning render");
-	res.render('results', { 
-		dataReceived : dataToSend
-	}, function() {
-		debug("Done rendering");
+	console.log(dataToSend);
+	res.render('results' , { dataReceived : "Check console for data. " }, function(err, html) {
+		if (err) {
+			debug("ERROR: " + err);
+		} else {
+			res.send(html);
+		}
 	});
 });
 
