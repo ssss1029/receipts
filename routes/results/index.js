@@ -164,7 +164,9 @@ function processResponse(str) {
 				previousMidY = blockMidY;
 				bufferWidth = blockHeight / 2;
 			} else {
-				var completedLine = new Line(currLine);
+				// Line is finished
+
+				var completedLine = new Line(sortBlocksBasedOnX(currLine));
 				lineList.push(completedLine);
 				currLine = new Array();
 				currLine.push(block);
@@ -177,6 +179,20 @@ function processResponse(str) {
 	var image = new Image(lineList, imageTopY, imageBottomY, imageLeftX, imageRightX);
 
 	return image.toString();
+}
+
+function sortBlocksBasedOnX(arrayOfBlocks) {
+	return arrayOfBlocks.sort(compareBlocksBasedOnX);
+}
+
+function compareBlocksBasedOnX(blockA, blockB) {
+	if (blockA._midX < blockB._midX) {
+		return -1;
+	} else if (blockA._midX > blockB._midX) {
+		return 1;
+	} else {
+		return 0
+	}
 }
 
 class Image {
