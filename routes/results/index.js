@@ -7,6 +7,11 @@ var fs = require('fs');
 var WritableStream = require('stream').Writable;
 
 /**
+ * The stores that we support so far
+ */
+var allowed_stores = ["safeway"];
+
+/**
  * Current implementation is inefficient because im piping to save to the server 
  * and then re-reading the saved file and sending that to google.
  * 
@@ -43,7 +48,10 @@ function processFile(savedFileName, req, res, next) {
 	res.render('results', {dataReceived : savedFileName});
 }
 
-
+/**
+ * On end of the HTTP request, calls processResponse(str) with str = the JSON object
+ * returned from Google
+ */
 function sendToGoogle(savedFileName, req, res, next) {
 
 	function callback(response) {
@@ -102,6 +110,9 @@ function sendToGoogle(savedFileName, req, res, next) {
 /**
  * Takes in the string of data from Google and analyzes it
  * See /uploads for exmaple return data from google
+ * 
+ * Creates an Image Object from the given String (str)
+ * Calls the appropriate processImage function
  **/
 function processResponse(str) {
 	var data = JSON.parse(str);
@@ -176,16 +187,65 @@ function processResponse(str) {
 	}
 
 	var image = new Image(lineList, imageTopY, imageBottomY, imageLeftX, imageRightX);
-	var returnString = image.toString();
+	var returnString = processImageToString(image);
+
 	debug("Done processing");
 	console.log(returnString);
-	return returnString;
+}
+
+/**
+ * Returns a string representation of the given image object.
+ */
+function processImageToString(image) {
+	return image.toString();
+}
+
+/**
+ * Checks the first two lines of the Image, trying to find the store name
+ * 
+ * Then calls the apppropriate function for that store
+ */
+function processImageByStoreName(image) {
+	var line1 = image._arrayOfLines[0]._arrayOfBlocks;
+	var line2 = image._arrayOfLines[1]._arrayOfBlocks;
+	var allBlocks = line1.concat(line2);
+	
+	for (var i = 0; i < allBlocks.length; i++) {
+		
+	}
+}
+
+/**
+ * Processing function for receipts that are deemed to be from safeway
+ */
+function processImageSafeway(image) {
+
+}
+
+/**
+ *  ############################### HELPER METHODS ##################################
+ */
+
+/**
+ * Calculates the distance between two string vectors using the Levenshtein distance
+ * https://en.wikipedia.org/wiki/Levenshtein_distance
+ * 
+ * s1 and s2 are strings
+ */
+function stringDistance(s1, s2) {
+	var cost;
+	var len_s1 = s1.length;
+	var len_s2 = s2.length;
+
 }
 
 function sortBlocksBasedOnX(arrayOfBlocks) {
 	return arrayOfBlocks.sort(compareBlocksBasedOnX);
 }
 
+/**
+ * Helper for sortBlocksBasedOnX()
+ */
 function compareBlocksBasedOnX(blockA, blockB) {
 	if (blockA._midX < blockB._midX) {
 		return -1;
@@ -249,6 +309,12 @@ class TextBlock extends Block{
 class PriceBlock extends Block{
 	// Will implement later
 }
+
+
+/**
+ *  ############################### END HELPER METHODS ##################################
+ */
+
 
 // Is a test endpoint to see what we can do using the data that was
 // received from a particular file (safeway_08_06_10.jpg)
