@@ -231,12 +231,32 @@ function processImageSafeway(image) {
  * https://en.wikipedia.org/wiki/Levenshtein_distance
  * 
  * s1 and s2 are strings
+ * 
+ * *****THIS IS VERY INEFFICIENT*****
  */
 function stringDistance(s1, s2) {
 	var cost;
 	var len_s1 = s1.length;
 	var len_s2 = s2.length;
 
+	// Base cases
+	if (len_s1 == 0) {
+		return len_s2;
+	} else if (len_s2 == 0) {
+		return len_s1;
+	}
+
+	// Test last characters
+	if (s1.charAt(len_s1 - 1) == s2.charAt(len_s2 - 1)) {
+		cost = 0;
+	} else {
+		cost = 1;
+	}
+
+	// Recursively return minimum
+	return Math.min(stringDistance(s1.subsring(0, s1.length-1), s2) + 1,
+					stringDistance(s1, s2.subsring(0, s2.length-1)) + 1,
+					stringDistance(s1.subsring(0, s1.length-1), s2.subsring(0, s2.length-1)) + cost);
 }
 
 function sortBlocksBasedOnX(arrayOfBlocks) {
