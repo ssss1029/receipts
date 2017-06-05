@@ -210,8 +210,25 @@ function processImageByStoreName(image) {
 	var line2 = image._arrayOfLines[1]._arrayOfBlocks;
 	var allBlocks = line1.concat(line2);
 	
+	var closestMatch = "";
+	var closestDistance = 9999999;
 	for (var i = 0; i < allBlocks.length; i++) {
-		
+		for (var k = 0; k < allowed_stores.length; k++) {
+			var currentDistance = stringDistance(allBlocks[i], allBlocks[k]);
+			if (currentDistance < closestDistance) {
+				// found a closer match
+				closestMatch = allowed_stores[k];
+				closestDistance = currentDistance;
+			}
+		}
+	}
+
+	switch(closestMatch) {
+		case "safeway":
+			return processImageSafeway(image);
+			break;
+		default:
+			console.log("ERROR: I didnt find a store lol");
 	}
 }
 
@@ -219,7 +236,7 @@ function processImageByStoreName(image) {
  * Processing function for receipts that are deemed to be from safeway
  */
 function processImageSafeway(image) {
-
+	// Assume this is a safeway receipt
 }
 
 /**
