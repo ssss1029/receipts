@@ -187,7 +187,7 @@ function processResponse(str) {
 	}
 
 	var image = new Image(lineList, imageTopY, imageBottomY, imageLeftX, imageRightX);
-	var returnString = processImageToString(image);
+	var returnString = processImageByStoreName(image);
 
 	debug("Done processing");
 	console.log(returnString);
@@ -214,7 +214,7 @@ function processImageByStoreName(image) {
 	var closestDistance = 9999999;
 	for (var i = 0; i < allBlocks.length; i++) {
 		for (var k = 0; k < allowed_stores.length; k++) {
-			var currentDistance = stringDistance(allBlocks[i], allBlocks[k]);
+			var currentDistance = stringDistance(allBlocks[i]._contents.toLowerCase(), allowed_stores[k]);
 			if (currentDistance < closestDistance) {
 				// found a closer match
 				closestMatch = allowed_stores[k];
@@ -237,6 +237,24 @@ function processImageByStoreName(image) {
  */
 function processImageSafeway(image) {
 	// Assume this is a safeway receipt
+	// Look for the word "bal" which is going to signal the end of the receipt, and total money spent
+	console.log("THIS IS A SAFEWAY RECEIPT!");
+
+	var receiptBeginLine = 0;
+	var receiptEndLine = 99999;
+	for (var i = 0; i < image._arrayOfLines.length; i++) {
+		for (var b = 0; b < image._arrayOfLines[i]._arrayOfBlocks.length; b++) {
+			var currBlock = image._arrayOfLines[i]._arrayOfBlocks[b];
+			if (currBlock._contents.toLowerCase() == "bal" && i < receiptEndLine) {
+				// we have the last block. Exit looking at stuff
+				receiptEndLine = i + 1;
+			}
+		}
+	}
+
+	image._arrayOfLines = image._arrayOfLines.slice(receiptBeginLine, receiptEndLine);
+
+	return image.toString();
 }
 
 /**
@@ -271,9 +289,9 @@ function stringDistance(s1, s2) {
 	}
 
 	// Recursively return minimum
-	return Math.min(stringDistance(s1.subsring(0, s1.length-1), s2) + 1,
-					stringDistance(s1, s2.subsring(0, s2.length-1)) + 1,
-					stringDistance(s1.subsring(0, s1.length-1), s2.subsring(0, s2.length-1)) + cost);
+	return Math.min(stringDistance(s1.substring(0, s1.length-1), s2) + 1,
+					stringDistance(s1, s2.substring(0, s2.length-1)) + 1,
+					stringDistance(s1.substring(0, s1.length-1), s2.substring(0, s2.length-1)) + cost);
 }
 
 function sortBlocksBasedOnX(arrayOfBlocks) {
