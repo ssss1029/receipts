@@ -9,7 +9,7 @@ var WritableStream = require('stream').Writable;
 /**
  * The stores that we support so far
  */
-var allowed_stores = ["safeway"];
+var allowed_stores = ["safeway", "walmart", "target"];
 
 /**
  * Current implementation is inefficient because im piping to save to the server 
@@ -187,6 +187,10 @@ function processResponse(str) {
 	}
 
 	var image = new Image(lineList, imageTopY, imageBottomY, imageLeftX, imageRightX);
+	console.log("############ MADE IMAGE ###############");
+	console.log(image.toString());
+	console.log("############ DONE IMAGE ###############");
+
 	var returnString = processImageByStoreName(image);
 
 	debug("Done processing");

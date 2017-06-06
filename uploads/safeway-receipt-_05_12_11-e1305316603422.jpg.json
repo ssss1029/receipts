@@ -4,7 +4,7 @@
       "textAnnotations": [
         {
           "locale": "en",
-          "description": "SAFEWAY\nSTORE MGR STEVE BERGER 503-738-4700\nTHANK YOU FOR SHOPPING WITH US\nGROCERY\n69 F\nSFY DICED TOM\n79\nRe 9P\nCe\nCard Savings\n49 F\nSFY BLACK BEANS\n99 F\nSFY GRT NRTHRN BNS\nRAISIN BRAN\n2 QTY\n7.98\nRe 9Price\nCard Savings\n4.40\n40\nMfr CP\n2, 38 F\n2 QTY\nK LLGG CRI, BRY FRU\n8, 38\nReg Price\n4.00\nd Sav\n2.00\nMf\nCP\n2.99 F\nKELOGG CEREAL\n3.99\nReg Price\n00\nMfr CP\nGROC NONEDIBLE\n5.49\nSF WY SOFTLY BATH\n6.99\nReg Price\nCard S\n50\nREFRIG/FROZEN\n3.00 F\n2 QTY\nHALF & HALF\nRe 9 Price\n3.98\nCard Savings\n2.49 F\nDAIRY GLEN WHOLE MI\nGEN MERCHANDISE\nHME CARE GMHBC CPN\n00 F\nReg Price\nCard Savings\n4.47\nPINE SOL CLEANER L\nRegP rice\n97\nCard Savings\n3.00\nStore CPn\n4.50\nPRODUCE\n4.06 lb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nRegP\n2.40\nCard Savings\n38\n5,08 l b e $0.25/lb\nJUMBO YLW ONIONS\n27 F\nReg Price\n3.00\nCard Savings\n73\n4.09\nb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nReg Price\n2.4\nCard Savings\n39\n4.26 lb $0.25/lb\nWT\nJUMBO YLW ONIONS\n07 F\nRe 9Price\n2.5\nCard Savings\n44\n0, 79\nCILANTRO\n79 F\nADD'L DISCOUNTS\nSC\n$1 OFF $5 PRODUCE\n00-F\nSC\nGROCERY\n2.00-F\n00\nMC OP SCANNED COUPON\n2.00\nMC OP SCANNED COUPON\n50\nTAX\n000 BAL\n25, 84\nCASH\n40.00\nCHANGE\nNUMBER\nEMS\n9:50 1260 03 0216 1064\nYOUR CASHIER TODAY WAS STEPHANIE\nJAI MERRILL\n4680\n93\n40\n34, 33\nTotol s\nValue\n57x\ncumulated\nEAR\n0 YOU\n3929\nSAFEWAY CoM\n",
+          "description": "SAFEWAY\nSTORE MGR STEVE BERGER 503-738-4700\nTHANK YOU FOR SHOPPING WITH US\nGROCERY\n69 F\nSFY DICED TOM\n79\nRe 9P\nCe\nCard Savings\n49 F\nSFY BLACK BEANS\n99 F\nSFY GRT NRTHRN BNS\nRAISIN BRAN\n2 QTY\n7.98\nRe 9Price\nCard Savings\n4.40\n40\nMfr CP\n2, 38 F\n2 QTY\nK LLGG CRI, BRY FRU\n8, 38\nReg Price\n4.00\nd Sav\n2.00\nMf\nCP\n2.99 F\nKELOGG CEREAL\n3.99\nReg Price\n00\nMfr CP\nGROC NONEDIBLE\n5.49\nSF WY SOFTLY BATH\n6.99\nReg Price\nCard S\n50\nREFRIG/FROZEN\n3.00 F\n2 QTY\nHALF & HALF\nRe 9 Price\n3.98\nCard Savings\n2.49 F\nDAIRY GLEN WHOLE MI\nGEN MERCHANDISE\nHME CARE GMHBC CPN\n00 F\nReg Price\nCard Savings\n4.47\nPINE SOL CLEANER L\nRegP rice\n97\nCard Savings\n3.00\nStore CPn\n4.50\nPRODUCE\n4.06 lb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nRegP\n2.40\nCard Savings\n38\n5,08 l b e $0.25/lb\nJUMBO YLW ONIONS\n27 F\nReg Price\n3.00\nCard Savings\n73\n4.09\nb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nReg Price\n2.4\nCard Savings\n39\n4.26 lb $0.25/lb\nWT\nJUMBO YLW ONIONS\n07 F\nRe 9Price\n2.5\nCard Savings\n44\n0, 79 CILANTRO\n79 F\nADD'L DISCOUNTS\nSC\n$1 OFF $5 PRODUCE\n00-F\nSC\nGROCERY\n2.00-F\n00\nMC OP SCANNED COUPON\n2.00\nMC OP SCANNED COUPON\n50\nTAX\n000 BAL\n25, 84\nCASH\n40.00\nCHANGE\nNUMBER\nEMS\n9:50 1260 03 0216 1064\nYOUR CASHIER TODAY WAS STEPHANIE\nJAI MERRILL\n4680\n93\n40\n34, 33\nTotal s\ninsu Value\n57x\n",
           "boundingPoly": {
             "vertices": [
               {
@@ -17,11 +17,11 @@
               },
               {
                 "x": 639,
-                "y": 2860
+                "y": 2651
               },
               {
                 "x": 50,
-                "y": 2860
+                "y": 2651
               }
             ]
           }
@@ -63,11 +63,11 @@
               },
               {
                 "x": 175,
-                "y": 287
+                "y": 285
               },
               {
                 "x": 115,
-                "y": 289
+                "y": 287
               }
             ]
           }
@@ -77,20 +77,20 @@
           "boundingPoly": {
             "vertices": [
               {
-                "x": 187,
-                "y": 259
+                "x": 189,
+                "y": 257
               },
               {
                 "x": 226,
-                "y": 258
+                "y": 256
               },
               {
                 "x": 227,
-                "y": 287
+                "y": 283
               },
               {
-                "x": 188,
-                "y": 288
+                "x": 190,
+                "y": 284
               }
             ]
           }
@@ -101,19 +101,19 @@
             "vertices": [
               {
                 "x": 239,
-                "y": 257
+                "y": 256
+              },
+              {
+                "x": 302,
+                "y": 254
               },
               {
                 "x": 303,
-                "y": 255
-              },
-              {
-                "x": 304,
-                "y": 284
+                "y": 281
               },
               {
                 "x": 240,
-                "y": 286
+                "y": 283
               }
             ]
           }
@@ -123,20 +123,20 @@
           "boundingPoly": {
             "vertices": [
               {
-                "x": 316,
-                "y": 256
-              },
-              {
-                "x": 393,
+                "x": 317,
                 "y": 254
               },
               {
                 "x": 394,
-                "y": 283
+                "y": 252
               },
               {
-                "x": 317,
-                "y": 285
+                "x": 395,
+                "y": 279
+              },
+              {
+                "x": 318,
+                "y": 281
               }
             ]
           }
@@ -4566,16 +4566,16 @@
                 "y": 1967
               },
               {
-                "x": 122,
-                "y": 1967
+                "x": 121,
+                "y": 1968
               },
               {
-                "x": 122,
-                "y": 1989
+                "x": 120,
+                "y": 1992
               },
               {
-                "x": 94,
-                "y": 1989
+                "x": 93,
+                "y": 1991
               }
             ]
           }
@@ -5777,24 +5777,24 @@
           }
         },
         {
-          "description": "Totol",
+          "description": "Total",
           "boundingPoly": {
             "vertices": [
               {
-                "x": 105,
+                "x": 104,
                 "y": 2600
               },
               {
-                "x": 172,
-                "y": 2603
+                "x": 174,
+                "y": 2600
               },
               {
-                "x": 171,
-                "y": 2626
+                "x": 174,
+                "y": 2625
               },
               {
                 "x": 104,
-                "y": 2623
+                "y": 2625
               }
             ]
           }
@@ -5823,24 +5823,47 @@
           }
         },
         {
+          "description": "insu",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 240,
+                "y": 2605
+              },
+              {
+                "x": 294,
+                "y": 2608
+              },
+              {
+                "x": 292,
+                "y": 2634
+              },
+              {
+                "x": 238,
+                "y": 2631
+              }
+            ]
+          }
+        },
+        {
           "description": "Value",
           "boundingPoly": {
             "vertices": [
               {
-                "x": 312,
-                "y": 2609
+                "x": 313,
+                "y": 2610
+              },
+              {
+                "x": 387,
+                "y": 2614
               },
               {
                 "x": 385,
-                "y": 2612
-              },
-              {
-                "x": 384,
-                "y": 2635
+                "y": 2640
               },
               {
                 "x": 311,
-                "y": 2632
+                "y": 2636
               }
             ]
           }
@@ -5864,167 +5887,6 @@
               {
                 "x": 571,
                 "y": 2651
-              }
-            ]
-          }
-        },
-        {
-          "description": "cumulated",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 438,
-                "y": 2686
-              },
-              {
-                "x": 570,
-                "y": 2698
-              },
-              {
-                "x": 569,
-                "y": 2719
-              },
-              {
-                "x": 436,
-                "y": 2707
-              }
-            ]
-          }
-        },
-        {
-          "description": "EAR",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 276,
-                "y": 2796
-              },
-              {
-                "x": 318,
-                "y": 2796
-              },
-              {
-                "x": 318,
-                "y": 2821
-              },
-              {
-                "x": 276,
-                "y": 2821
-              }
-            ]
-          }
-        },
-        {
-          "description": "0",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 365,
-                "y": 2804
-              },
-              {
-                "x": 379,
-                "y": 2804
-              },
-              {
-                "x": 379,
-                "y": 2829
-              },
-              {
-                "x": 365,
-                "y": 2829
-              }
-            ]
-          }
-        },
-        {
-          "description": "YOU",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 408,
-                "y": 2804
-              },
-              {
-                "x": 453,
-                "y": 2804
-              },
-              {
-                "x": 453,
-                "y": 2829
-              },
-              {
-                "x": 408,
-                "y": 2829
-              }
-            ]
-          }
-        },
-        {
-          "description": "3929",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 213,
-                "y": 2821
-              },
-              {
-                "x": 264,
-                "y": 2821
-              },
-              {
-                "x": 264,
-                "y": 2842
-              },
-              {
-                "x": 213,
-                "y": 2842
-              }
-            ]
-          }
-        },
-        {
-          "description": "SAFEWAY",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 392,
-                "y": 2829
-              },
-              {
-                "x": 482,
-                "y": 2829
-              },
-              {
-                "x": 482,
-                "y": 2860
-              },
-              {
-                "x": 392,
-                "y": 2860
-              }
-            ]
-          }
-        },
-        {
-          "description": "CoM",
-          "boundingPoly": {
-            "vertices": [
-              {
-                "x": 494,
-                "y": 2829
-              },
-              {
-                "x": 535,
-                "y": 2829
-              },
-              {
-                "x": 535,
-                "y": 2860
-              },
-              {
-                "x": 494,
-                "y": 2860
               }
             ]
           }
@@ -6370,11 +6232,11 @@
                     },
                     {
                       "x": 603,
-                      "y": 277
+                      "y": 275
                     },
                     {
                       "x": 115,
-                      "y": 289
+                      "y": 287
                     }
                   ]
                 },
@@ -6399,11 +6261,11 @@
                         },
                         {
                           "x": 605,
-                          "y": 290
+                          "y": 289
                         },
                         {
                           "x": 114,
-                          "y": 290
+                          "y": 289
                         }
                       ]
                     },
@@ -6428,11 +6290,11 @@
                             },
                             {
                               "x": 175,
-                              "y": 287
+                              "y": 285
                             },
                             {
                               "x": 115,
-                              "y": 289
+                              "y": 287
                             }
                           ]
                         },
@@ -6457,11 +6319,11 @@
                                 },
                                 {
                                   "x": 125,
-                                  "y": 289
+                                  "y": 287
                                 },
                                 {
                                   "x": 115,
-                                  "y": 289
+                                  "y": 287
                                 }
                               ]
                             },
@@ -6479,19 +6341,19 @@
                               "vertices": [
                                 {
                                   "x": 126,
-                                  "y": 260
+                                  "y": 259
                                 },
                                 {
                                   "x": 136,
-                                  "y": 260
+                                  "y": 259
                                 },
                                 {
                                   "x": 137,
-                                  "y": 289
+                                  "y": 286
                                 },
                                 {
                                   "x": 127,
-                                  "y": 289
+                                  "y": 286
                                 }
                               ]
                             },
@@ -6508,20 +6370,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 136,
-                                  "y": 260
+                                  "x": 137,
+                                  "y": 259
+                                },
+                                {
+                                  "x": 148,
+                                  "y": 259
                                 },
                                 {
                                   "x": 149,
-                                  "y": 260
+                                  "y": 286
                                 },
                                 {
-                                  "x": 150,
-                                  "y": 289
-                                },
-                                {
-                                  "x": 137,
-                                  "y": 289
+                                  "x": 138,
+                                  "y": 286
                                 }
                               ]
                             },
@@ -6539,19 +6401,19 @@
                               "vertices": [
                                 {
                                   "x": 150,
-                                  "y": 260
+                                  "y": 259
                                 },
                                 {
                                   "x": 161,
-                                  "y": 260
+                                  "y": 259
                                 },
                                 {
                                   "x": 162,
-                                  "y": 289
+                                  "y": 286
                                 },
                                 {
                                   "x": 151,
-                                  "y": 289
+                                  "y": 286
                                 }
                               ]
                             },
@@ -6571,20 +6433,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 161,
-                                  "y": 260
+                                  "x": 163,
+                                  "y": 259
                                 },
                                 {
-                                  "x": 172,
-                                  "y": 260
+                                  "x": 174,
+                                  "y": 259
                                 },
                                 {
-                                  "x": 173,
-                                  "y": 289
+                                  "x": 175,
+                                  "y": 286
                                 },
                                 {
-                                  "x": 162,
-                                  "y": 289
+                                  "x": 164,
+                                  "y": 286
                                 }
                               ]
                             },
@@ -6603,20 +6465,20 @@
                         "boundingBox": {
                           "vertices": [
                             {
-                              "x": 187,
-                              "y": 259
+                              "x": 189,
+                              "y": 257
                             },
                             {
                               "x": 226,
-                              "y": 258
+                              "y": 256
                             },
                             {
                               "x": 227,
-                              "y": 287
+                              "y": 283
                             },
                             {
-                              "x": 188,
-                              "y": 288
+                              "x": 190,
+                              "y": 284
                             }
                           ]
                         },
@@ -6632,20 +6494,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 187,
-                                  "y": 259
+                                  "x": 189,
+                                  "y": 257
                                 },
                                 {
-                                  "x": 200,
-                                  "y": 259
+                                  "x": 202,
+                                  "y": 257
                                 },
                                 {
-                                  "x": 201,
-                                  "y": 288
+                                  "x": 203,
+                                  "y": 284
                                 },
                                 {
-                                  "x": 188,
-                                  "y": 288
+                                  "x": 190,
+                                  "y": 284
                                 }
                               ]
                             },
@@ -6663,19 +6525,19 @@
                               "vertices": [
                                 {
                                   "x": 201,
-                                  "y": 259
+                                  "y": 257
+                                },
+                                {
+                                  "x": 211,
+                                  "y": 257
                                 },
                                 {
                                   "x": 212,
-                                  "y": 259
-                                },
-                                {
-                                  "x": 213,
-                                  "y": 288
+                                  "y": 284
                                 },
                                 {
                                   "x": 202,
-                                  "y": 288
+                                  "y": 284
                                 }
                               ]
                             },
@@ -6696,19 +6558,19 @@
                               "vertices": [
                                 {
                                   "x": 213,
-                                  "y": 259
+                                  "y": 257
                                 },
                                 {
                                   "x": 226,
-                                  "y": 259
+                                  "y": 257
                                 },
                                 {
                                   "x": 227,
-                                  "y": 288
+                                  "y": 284
                                 },
                                 {
                                   "x": 214,
-                                  "y": 288
+                                  "y": 284
                                 }
                               ]
                             },
@@ -6728,19 +6590,19 @@
                           "vertices": [
                             {
                               "x": 239,
-                              "y": 257
+                              "y": 256
+                            },
+                            {
+                              "x": 302,
+                              "y": 254
                             },
                             {
                               "x": 303,
-                              "y": 255
-                            },
-                            {
-                              "x": 304,
-                              "y": 284
+                              "y": 281
                             },
                             {
                               "x": 240,
-                              "y": 286
+                              "y": 283
                             }
                           ]
                         },
@@ -6757,19 +6619,19 @@
                               "vertices": [
                                 {
                                   "x": 239,
-                                  "y": 257
+                                  "y": 256
                                 },
                                 {
                                   "x": 252,
-                                  "y": 257
+                                  "y": 256
                                 },
                                 {
                                   "x": 253,
-                                  "y": 286
+                                  "y": 283
                                 },
                                 {
                                   "x": 240,
-                                  "y": 286
+                                  "y": 283
                                 }
                               ]
                             },
@@ -6787,19 +6649,19 @@
                               "vertices": [
                                 {
                                   "x": 253,
-                                  "y": 257
+                                  "y": 256
                                 },
                                 {
                                   "x": 264,
-                                  "y": 257
+                                  "y": 256
                                 },
                                 {
                                   "x": 265,
-                                  "y": 286
+                                  "y": 283
                                 },
                                 {
                                   "x": 254,
-                                  "y": 286
+                                  "y": 283
                                 }
                               ]
                             },
@@ -6816,20 +6678,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 264,
-                                  "y": 257
-                                },
-                                {
-                                  "x": 275,
-                                  "y": 257
+                                  "x": 266,
+                                  "y": 256
                                 },
                                 {
                                   "x": 276,
-                                  "y": 286
+                                  "y": 256
                                 },
                                 {
-                                  "x": 265,
-                                  "y": 286
+                                  "x": 277,
+                                  "y": 283
+                                },
+                                {
+                                  "x": 267,
+                                  "y": 283
                                 }
                               ]
                             },
@@ -6847,19 +6709,19 @@
                               "vertices": [
                                 {
                                   "x": 277,
-                                  "y": 257
+                                  "y": 256
                                 },
                                 {
-                                  "x": 290,
-                                  "y": 257
+                                  "x": 288,
+                                  "y": 256
                                 },
                                 {
-                                  "x": 291,
-                                  "y": 286
+                                  "x": 289,
+                                  "y": 283
                                 },
                                 {
                                   "x": 278,
-                                  "y": 286
+                                  "y": 283
                                 }
                               ]
                             },
@@ -6880,19 +6742,19 @@
                               "vertices": [
                                 {
                                   "x": 290,
-                                  "y": 256
+                                  "y": 254
                                 },
                                 {
                                   "x": 303,
-                                  "y": 256
+                                  "y": 254
                                 },
                                 {
                                   "x": 304,
-                                  "y": 285
+                                  "y": 281
                                 },
                                 {
                                   "x": 291,
-                                  "y": 285
+                                  "y": 281
                                 }
                               ]
                             },
@@ -6911,20 +6773,20 @@
                         "boundingBox": {
                           "vertices": [
                             {
-                              "x": 316,
-                              "y": 256
-                            },
-                            {
-                              "x": 393,
+                              "x": 317,
                               "y": 254
                             },
                             {
                               "x": 394,
-                              "y": 283
+                              "y": 252
                             },
                             {
-                              "x": 317,
-                              "y": 285
+                              "x": 395,
+                              "y": 279
+                            },
+                            {
+                              "x": 318,
+                              "y": 281
                             }
                           ]
                         },
@@ -6940,20 +6802,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 316,
-                                  "y": 256
-                                },
-                                {
-                                  "x": 327,
-                                  "y": 256
+                                  "x": 317,
+                                  "y": 254
                                 },
                                 {
                                   "x": 328,
-                                  "y": 285
+                                  "y": 254
                                 },
                                 {
-                                  "x": 317,
-                                  "y": 285
+                                  "x": 329,
+                                  "y": 281
+                                },
+                                {
+                                  "x": 318,
+                                  "y": 281
                                 }
                               ]
                             },
@@ -6970,20 +6832,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 329,
-                                  "y": 256
+                                  "x": 330,
+                                  "y": 254
+                                },
+                                {
+                                  "x": 341,
+                                  "y": 254
                                 },
                                 {
                                   "x": 342,
-                                  "y": 256
+                                  "y": 281
                                 },
                                 {
-                                  "x": 343,
-                                  "y": 285
-                                },
-                                {
-                                  "x": 330,
-                                  "y": 285
+                                  "x": 331,
+                                  "y": 281
                                 }
                               ]
                             },
@@ -7001,19 +6863,19 @@
                               "vertices": [
                                 {
                                   "x": 342,
-                                  "y": 254
+                                  "y": 253
                                 },
                                 {
-                                  "x": 355,
-                                  "y": 254
+                                  "x": 353,
+                                  "y": 253
                                 },
                                 {
-                                  "x": 356,
-                                  "y": 283
+                                  "x": 354,
+                                  "y": 280
                                 },
                                 {
                                   "x": 343,
-                                  "y": 283
+                                  "y": 280
                                 }
                               ]
                             },
@@ -7031,19 +6893,19 @@
                               "vertices": [
                                 {
                                   "x": 355,
-                                  "y": 254
+                                  "y": 253
                                 },
                                 {
                                   "x": 366,
-                                  "y": 254
+                                  "y": 253
                                 },
                                 {
                                   "x": 367,
-                                  "y": 283
+                                  "y": 280
                                 },
                                 {
                                   "x": 356,
-                                  "y": 283
+                                  "y": 280
                                 }
                               ]
                             },
@@ -7061,19 +6923,19 @@
                               "vertices": [
                                 {
                                   "x": 368,
-                                  "y": 254
+                                  "y": 253
                                 },
                                 {
-                                  "x": 381,
-                                  "y": 254
+                                  "x": 379,
+                                  "y": 253
                                 },
                                 {
-                                  "x": 382,
-                                  "y": 283
+                                  "x": 380,
+                                  "y": 280
                                 },
                                 {
                                   "x": 369,
-                                  "y": 283
+                                  "y": 280
                                 }
                               ]
                             },
@@ -7093,20 +6955,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 382,
-                                  "y": 254
+                                  "x": 380,
+                                  "y": 253
                                 },
                                 {
-                                  "x": 395,
-                                  "y": 254
+                                  "x": 393,
+                                  "y": 253
                                 },
                                 {
-                                  "x": 396,
-                                  "y": 283
+                                  "x": 394,
+                                  "y": 280
                                 },
                                 {
-                                  "x": 383,
-                                  "y": 283
+                                  "x": 381,
+                                  "y": 280
                                 }
                               ]
                             },
@@ -40730,11 +40592,11 @@
                       "y": 1967
                     },
                     {
-                      "x": 122,
+                      "x": 85,
                       "y": 1967
                     },
                     {
-                      "x": 122,
+                      "x": 85,
                       "y": 1989
                     },
                     {
@@ -40759,11 +40621,11 @@
                           "y": 1967
                         },
                         {
-                          "x": 122,
+                          "x": 85,
                           "y": 1967
                         },
                         {
-                          "x": 122,
+                          "x": 85,
                           "y": 1989
                         },
                         {
@@ -40866,7 +40728,70 @@
                             "text": ","
                           }
                         ]
-                      },
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "co"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 94,
+                      "y": 1967
+                    },
+                    {
+                      "x": 290,
+                      "y": 1972
+                    },
+                    {
+                      "x": 289,
+                      "y": 1996
+                    },
+                    {
+                      "x": 93,
+                      "y": 1991
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "co"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 94,
+                          "y": 1967
+                        },
+                        {
+                          "x": 290,
+                          "y": 1967
+                        },
+                        {
+                          "x": 290,
+                          "y": 1995
+                        },
+                        {
+                          "x": 94,
+                          "y": 1995
+                        }
+                      ]
+                    },
+                    "words": [
                       {
                         "property": {
                           "detectedLanguages": [
@@ -40882,16 +40807,16 @@
                               "y": 1967
                             },
                             {
-                              "x": 122,
-                              "y": 1967
+                              "x": 121,
+                              "y": 1968
                             },
                             {
-                              "x": 122,
-                              "y": 1989
+                              "x": 120,
+                              "y": 1992
                             },
                             {
-                              "x": 94,
-                              "y": 1989
+                              "x": 93,
+                              "y": 1991
                             }
                           ]
                         },
@@ -40911,16 +40836,16 @@
                                   "y": 1967
                                 },
                                 {
-                                  "x": 106,
+                                  "x": 105,
                                   "y": 1967
                                 },
                                 {
-                                  "x": 106,
-                                  "y": 1989
+                                  "x": 104,
+                                  "y": 1991
                                 },
                                 {
-                                  "x": 94,
-                                  "y": 1989
+                                  "x": 93,
+                                  "y": 1991
                                 }
                               ]
                             },
@@ -40934,7 +40859,7 @@
                                 }
                               ],
                               "detectedBreak": {
-                                "type": "EOL_SURE_SPACE"
+                                "type": "SPACE"
                               }
                             },
                             "boundingBox": {
@@ -40944,86 +40869,23 @@
                                   "y": 1967
                                 },
                                 {
-                                  "x": 122,
+                                  "x": 123,
                                   "y": 1967
                                 },
                                 {
                                   "x": 122,
-                                  "y": 1989
+                                  "y": 1991
                                 },
                                 {
-                                  "x": 107,
-                                  "y": 1989
+                                  "x": 106,
+                                  "y": 1991
                                 }
                               ]
                             },
                             "text": "9"
                           }
                         ]
-                      }
-                    ]
-                  }
-                ],
-                "blockType": "TEXT"
-              },
-              {
-                "property": {
-                  "detectedLanguages": [
-                    {
-                      "languageCode": "co"
-                    }
-                  ]
-                },
-                "boundingBox": {
-                  "vertices": [
-                    {
-                      "x": 170,
-                      "y": 1969
-                    },
-                    {
-                      "x": 290,
-                      "y": 1969
-                    },
-                    {
-                      "x": 290,
-                      "y": 1996
-                    },
-                    {
-                      "x": 170,
-                      "y": 1996
-                    }
-                  ]
-                },
-                "paragraphs": [
-                  {
-                    "property": {
-                      "detectedLanguages": [
-                        {
-                          "languageCode": "co"
-                        }
-                      ]
-                    },
-                    "boundingBox": {
-                      "vertices": [
-                        {
-                          "x": 170,
-                          "y": 1969
-                        },
-                        {
-                          "x": 290,
-                          "y": 1969
-                        },
-                        {
-                          "x": 290,
-                          "y": 1996
-                        },
-                        {
-                          "x": 170,
-                          "y": 1996
-                        }
-                      ]
-                    },
-                    "words": [
+                      },
                       {
                         "property": {
                           "detectedLanguages": [
@@ -50835,7 +50697,7 @@
                 "property": {
                   "detectedLanguages": [
                     {
-                      "languageCode": "su"
+                      "languageCode": "en"
                     }
                   ]
                 },
@@ -50843,18 +50705,18 @@
                   "vertices": [
                     {
                       "x": 105,
-                      "y": 2600
-                    },
-                    {
-                      "x": 386,
-                      "y": 2612
+                      "y": 2597
                     },
                     {
                       "x": 385,
-                      "y": 2635
+                      "y": 2614
                     },
                     {
-                      "x": 104,
+                      "x": 384,
+                      "y": 2640
+                    },
+                    {
+                      "x": 103,
                       "y": 2623
                     }
                   ]
@@ -50864,7 +50726,7 @@
                     "property": {
                       "detectedLanguages": [
                         {
-                          "languageCode": "su"
+                          "languageCode": "en"
                         }
                       ]
                     },
@@ -50880,11 +50742,11 @@
                         },
                         {
                           "x": 387,
-                          "y": 2635
+                          "y": 2641
                         },
                         {
                           "x": 104,
-                          "y": 2635
+                          "y": 2641
                         }
                       ]
                     },
@@ -50893,27 +50755,27 @@
                         "property": {
                           "detectedLanguages": [
                             {
-                              "languageCode": "su"
+                              "languageCode": "en"
                             }
                           ]
                         },
                         "boundingBox": {
                           "vertices": [
                             {
-                              "x": 105,
+                              "x": 104,
                               "y": 2600
                             },
                             {
-                              "x": 172,
-                              "y": 2603
+                              "x": 174,
+                              "y": 2600
                             },
                             {
-                              "x": 171,
-                              "y": 2626
+                              "x": 174,
+                              "y": 2625
                             },
                             {
                               "x": 104,
-                              "y": 2623
+                              "y": 2625
                             }
                           ]
                         },
@@ -50929,20 +50791,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 105,
+                                  "x": 104,
                                   "y": 2600
                                 },
                                 {
-                                  "x": 114,
+                                  "x": 119,
                                   "y": 2600
                                 },
                                 {
-                                  "x": 113,
-                                  "y": 2623
+                                  "x": 119,
+                                  "y": 2625
                                 },
                                 {
                                   "x": 104,
-                                  "y": 2623
+                                  "y": 2625
                                 }
                               ]
                             },
@@ -50959,20 +50821,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 116,
+                                  "x": 120,
                                   "y": 2600
                                 },
                                 {
-                                  "x": 130,
-                                  "y": 2601
+                                  "x": 134,
+                                  "y": 2600
                                 },
                                 {
-                                  "x": 129,
-                                  "y": 2624
+                                  "x": 134,
+                                  "y": 2625
                                 },
                                 {
-                                  "x": 115,
-                                  "y": 2623
+                                  "x": 120,
+                                  "y": 2625
                                 }
                               ]
                             },
@@ -50989,20 +50851,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 130,
+                                  "x": 134,
                                   "y": 2600
                                 },
                                 {
-                                  "x": 144,
-                                  "y": 2601
+                                  "x": 148,
+                                  "y": 2600
                                 },
                                 {
-                                  "x": 143,
-                                  "y": 2624
+                                  "x": 148,
+                                  "y": 2625
                                 },
                                 {
-                                  "x": 129,
-                                  "y": 2623
+                                  "x": 134,
+                                  "y": 2625
                                 }
                               ]
                             },
@@ -51019,24 +50881,24 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 146,
-                                  "y": 2602
+                                  "x": 148,
+                                  "y": 2600
                                 },
                                 {
                                   "x": 160,
-                                  "y": 2603
+                                  "y": 2600
                                 },
                                 {
-                                  "x": 159,
-                                  "y": 2626
+                                  "x": 160,
+                                  "y": 2625
                                 },
                                 {
-                                  "x": 145,
+                                  "x": 148,
                                   "y": 2625
                                 }
                               ]
                             },
-                            "text": "o"
+                            "text": "a"
                           },
                           {
                             "property": {
@@ -51052,19 +50914,19 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 160,
-                                  "y": 2602
+                                  "x": 161,
+                                  "y": 2600
                                 },
                                 {
                                   "x": 173,
-                                  "y": 2603
+                                  "y": 2600
                                 },
                                 {
-                                  "x": 172,
-                                  "y": 2626
+                                  "x": 173,
+                                  "y": 2625
                                 },
                                 {
-                                  "x": 159,
+                                  "x": 161,
                                   "y": 2625
                                 }
                               ]
@@ -51141,27 +51003,27 @@
                         "property": {
                           "detectedLanguages": [
                             {
-                              "languageCode": "en"
+                              "languageCode": "oc"
                             }
                           ]
                         },
                         "boundingBox": {
                           "vertices": [
                             {
-                              "x": 312,
-                              "y": 2609
+                              "x": 240,
+                              "y": 2605
                             },
                             {
-                              "x": 385,
-                              "y": 2612
+                              "x": 294,
+                              "y": 2608
                             },
                             {
-                              "x": 384,
-                              "y": 2635
+                              "x": 292,
+                              "y": 2634
                             },
                             {
-                              "x": 311,
-                              "y": 2632
+                              "x": 238,
+                              "y": 2631
                             }
                           ]
                         },
@@ -51177,20 +51039,174 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 312,
-                                  "y": 2609
+                                  "x": 240,
+                                  "y": 2605
                                 },
                                 {
-                                  "x": 328,
-                                  "y": 2610
+                                  "x": 253,
+                                  "y": 2606
                                 },
                                 {
-                                  "x": 327,
+                                  "x": 251,
+                                  "y": 2632
+                                },
+                                {
+                                  "x": 238,
+                                  "y": 2631
+                                }
+                              ]
+                            },
+                            "text": "i"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "en"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 254,
+                                  "y": 2606
+                                },
+                                {
+                                  "x": 265,
+                                  "y": 2607
+                                },
+                                {
+                                  "x": 263,
                                   "y": 2633
                                 },
                                 {
-                                  "x": 311,
+                                  "x": 252,
                                   "y": 2632
+                                }
+                              ]
+                            },
+                            "text": "n"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "en"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 267,
+                                  "y": 2607
+                                },
+                                {
+                                  "x": 281,
+                                  "y": 2608
+                                },
+                                {
+                                  "x": 279,
+                                  "y": 2634
+                                },
+                                {
+                                  "x": 265,
+                                  "y": 2633
+                                }
+                              ]
+                            },
+                            "text": "s"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "en"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 282,
+                                  "y": 2607
+                                },
+                                {
+                                  "x": 296,
+                                  "y": 2608
+                                },
+                                {
+                                  "x": 294,
+                                  "y": 2634
+                                },
+                                {
+                                  "x": 280,
+                                  "y": 2633
+                                }
+                              ]
+                            },
+                            "text": "u"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "en"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 313,
+                              "y": 2610
+                            },
+                            {
+                              "x": 387,
+                              "y": 2614
+                            },
+                            {
+                              "x": 385,
+                              "y": 2640
+                            },
+                            {
+                              "x": 311,
+                              "y": 2636
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "en"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 313,
+                                  "y": 2610
+                                },
+                                {
+                                  "x": 326,
+                                  "y": 2611
+                                },
+                                {
+                                  "x": 324,
+                                  "y": 2637
+                                },
+                                {
+                                  "x": 311,
+                                  "y": 2636
                                 }
                               ]
                             },
@@ -51207,20 +51223,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 329,
-                                  "y": 2609
+                                  "x": 326,
+                                  "y": 2610
                                 },
                                 {
                                   "x": 340,
-                                  "y": 2609
+                                  "y": 2611
                                 },
                                 {
-                                  "x": 339,
-                                  "y": 2632
+                                  "x": 338,
+                                  "y": 2637
                                 },
                                 {
-                                  "x": 328,
-                                  "y": 2632
+                                  "x": 324,
+                                  "y": 2636
                                 }
                               ]
                             },
@@ -51237,20 +51253,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 340,
-                                  "y": 2610
+                                  "x": 342,
+                                  "y": 2612
                                 },
                                 {
                                   "x": 356,
-                                  "y": 2611
+                                  "y": 2613
                                 },
                                 {
-                                  "x": 355,
-                                  "y": 2634
+                                  "x": 354,
+                                  "y": 2639
                                 },
                                 {
-                                  "x": 339,
-                                  "y": 2633
+                                  "x": 340,
+                                  "y": 2638
                                 }
                               ]
                             },
@@ -51267,20 +51283,20 @@
                             "boundingBox": {
                               "vertices": [
                                 {
-                                  "x": 356,
-                                  "y": 2610
+                                  "x": 358,
+                                  "y": 2612
+                                },
+                                {
+                                  "x": 372,
+                                  "y": 2613
                                 },
                                 {
                                   "x": 370,
-                                  "y": 2611
+                                  "y": 2639
                                 },
                                 {
-                                  "x": 369,
-                                  "y": 2634
-                                },
-                                {
-                                  "x": 355,
-                                  "y": 2633
+                                  "x": 356,
+                                  "y": 2638
                                 }
                               ]
                             },
@@ -51301,19 +51317,19 @@
                               "vertices": [
                                 {
                                   "x": 372,
-                                  "y": 2612
-                                },
-                                {
-                                  "x": 386,
                                   "y": 2613
                                 },
                                 {
-                                  "x": 385,
-                                  "y": 2636
+                                  "x": 386,
+                                  "y": 2614
                                 },
                                 {
-                                  "x": 371,
-                                  "y": 2635
+                                  "x": 384,
+                                  "y": 2640
+                                },
+                                {
+                                  "x": 370,
+                                  "y": 2639
                                 }
                               ]
                             },
@@ -51512,1464 +51528,11 @@
                   }
                 ],
                 "blockType": "TEXT"
-              },
-              {
-                "property": {
-                  "detectedLanguages": [
-                    {
-                      "languageCode": "co"
-                    }
-                  ]
-                },
-                "boundingBox": {
-                  "vertices": [
-                    {
-                      "x": 438,
-                      "y": 2686
-                    },
-                    {
-                      "x": 570,
-                      "y": 2698
-                    },
-                    {
-                      "x": 569,
-                      "y": 2719
-                    },
-                    {
-                      "x": 436,
-                      "y": 2707
-                    }
-                  ]
-                },
-                "paragraphs": [
-                  {
-                    "property": {
-                      "detectedLanguages": [
-                        {
-                          "languageCode": "co"
-                        }
-                      ]
-                    },
-                    "boundingBox": {
-                      "vertices": [
-                        {
-                          "x": 436,
-                          "y": 2686
-                        },
-                        {
-                          "x": 570,
-                          "y": 2686
-                        },
-                        {
-                          "x": 570,
-                          "y": 2720
-                        },
-                        {
-                          "x": 436,
-                          "y": 2720
-                        }
-                      ]
-                    },
-                    "words": [
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "co"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 438,
-                              "y": 2686
-                            },
-                            {
-                              "x": 570,
-                              "y": 2698
-                            },
-                            {
-                              "x": 569,
-                              "y": 2719
-                            },
-                            {
-                              "x": 436,
-                              "y": 2707
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 438,
-                                  "y": 2686
-                                },
-                                {
-                                  "x": 451,
-                                  "y": 2687
-                                },
-                                {
-                                  "x": 449,
-                                  "y": 2708
-                                },
-                                {
-                                  "x": 436,
-                                  "y": 2707
-                                }
-                              ]
-                            },
-                            "text": "c"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 452,
-                                  "y": 2688
-                                },
-                                {
-                                  "x": 465,
-                                  "y": 2689
-                                },
-                                {
-                                  "x": 463,
-                                  "y": 2710
-                                },
-                                {
-                                  "x": 450,
-                                  "y": 2709
-                                }
-                              ]
-                            },
-                            "text": "u"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 466,
-                                  "y": 2689
-                                },
-                                {
-                                  "x": 479,
-                                  "y": 2690
-                                },
-                                {
-                                  "x": 477,
-                                  "y": 2711
-                                },
-                                {
-                                  "x": 464,
-                                  "y": 2710
-                                }
-                              ]
-                            },
-                            "text": "m"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 481,
-                                  "y": 2690
-                                },
-                                {
-                                  "x": 497,
-                                  "y": 2691
-                                },
-                                {
-                                  "x": 495,
-                                  "y": 2712
-                                },
-                                {
-                                  "x": 479,
-                                  "y": 2711
-                                }
-                              ]
-                            },
-                            "text": "u"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 498,
-                                  "y": 2692
-                                },
-                                {
-                                  "x": 511,
-                                  "y": 2693
-                                },
-                                {
-                                  "x": 509,
-                                  "y": 2714
-                                },
-                                {
-                                  "x": 496,
-                                  "y": 2713
-                                }
-                              ]
-                            },
-                            "text": "l"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 511,
-                                  "y": 2692
-                                },
-                                {
-                                  "x": 524,
-                                  "y": 2693
-                                },
-                                {
-                                  "x": 522,
-                                  "y": 2714
-                                },
-                                {
-                                  "x": 509,
-                                  "y": 2713
-                                }
-                              ]
-                            },
-                            "text": "a"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 525,
-                                  "y": 2693
-                                },
-                                {
-                                  "x": 542,
-                                  "y": 2694
-                                },
-                                {
-                                  "x": 540,
-                                  "y": 2715
-                                },
-                                {
-                                  "x": 523,
-                                  "y": 2714
-                                }
-                              ]
-                            },
-                            "text": "t"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 542,
-                                  "y": 2695
-                                },
-                                {
-                                  "x": 555,
-                                  "y": 2696
-                                },
-                                {
-                                  "x": 553,
-                                  "y": 2717
-                                },
-                                {
-                                  "x": 540,
-                                  "y": 2716
-                                }
-                              ]
-                            },
-                            "text": "e"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "EOL_SURE_SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 557,
-                                  "y": 2696
-                                },
-                                {
-                                  "x": 570,
-                                  "y": 2697
-                                },
-                                {
-                                  "x": 568,
-                                  "y": 2718
-                                },
-                                {
-                                  "x": 555,
-                                  "y": 2717
-                                }
-                              ]
-                            },
-                            "text": "d"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "blockType": "TEXT"
-              },
-              {
-                "property": {
-                  "detectedLanguages": [
-                    {
-                      "languageCode": "en"
-                    }
-                  ]
-                },
-                "boundingBox": {
-                  "vertices": [
-                    {
-                      "x": 276,
-                      "y": 2796
-                    },
-                    {
-                      "x": 318,
-                      "y": 2796
-                    },
-                    {
-                      "x": 318,
-                      "y": 2821
-                    },
-                    {
-                      "x": 276,
-                      "y": 2821
-                    }
-                  ]
-                },
-                "paragraphs": [
-                  {
-                    "property": {
-                      "detectedLanguages": [
-                        {
-                          "languageCode": "en"
-                        }
-                      ]
-                    },
-                    "boundingBox": {
-                      "vertices": [
-                        {
-                          "x": 276,
-                          "y": 2796
-                        },
-                        {
-                          "x": 318,
-                          "y": 2796
-                        },
-                        {
-                          "x": 318,
-                          "y": 2821
-                        },
-                        {
-                          "x": 276,
-                          "y": 2821
-                        }
-                      ]
-                    },
-                    "words": [
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "en"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 276,
-                              "y": 2796
-                            },
-                            {
-                              "x": 318,
-                              "y": 2796
-                            },
-                            {
-                              "x": 318,
-                              "y": 2821
-                            },
-                            {
-                              "x": 276,
-                              "y": 2821
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 276,
-                                  "y": 2796
-                                },
-                                {
-                                  "x": 290,
-                                  "y": 2796
-                                },
-                                {
-                                  "x": 290,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 276,
-                                  "y": 2821
-                                }
-                              ]
-                            },
-                            "text": "E"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 290,
-                                  "y": 2796
-                                },
-                                {
-                                  "x": 304,
-                                  "y": 2796
-                                },
-                                {
-                                  "x": 304,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 290,
-                                  "y": 2821
-                                }
-                              ]
-                            },
-                            "text": "A"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "EOL_SURE_SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 305,
-                                  "y": 2796
-                                },
-                                {
-                                  "x": 319,
-                                  "y": 2796
-                                },
-                                {
-                                  "x": 319,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 305,
-                                  "y": 2821
-                                }
-                              ]
-                            },
-                            "text": "R"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "blockType": "TEXT"
-              },
-              {
-                "property": {
-                  "detectedLanguages": [
-                    {
-                      "languageCode": "en"
-                    }
-                  ]
-                },
-                "boundingBox": {
-                  "vertices": [
-                    {
-                      "x": 365,
-                      "y": 2804
-                    },
-                    {
-                      "x": 453,
-                      "y": 2804
-                    },
-                    {
-                      "x": 453,
-                      "y": 2829
-                    },
-                    {
-                      "x": 365,
-                      "y": 2829
-                    }
-                  ]
-                },
-                "paragraphs": [
-                  {
-                    "property": {
-                      "detectedLanguages": [
-                        {
-                          "languageCode": "en"
-                        }
-                      ]
-                    },
-                    "boundingBox": {
-                      "vertices": [
-                        {
-                          "x": 365,
-                          "y": 2804
-                        },
-                        {
-                          "x": 453,
-                          "y": 2804
-                        },
-                        {
-                          "x": 453,
-                          "y": 2829
-                        },
-                        {
-                          "x": 365,
-                          "y": 2829
-                        }
-                      ]
-                    },
-                    "words": [
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "en"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 365,
-                              "y": 2804
-                            },
-                            {
-                              "x": 379,
-                              "y": 2804
-                            },
-                            {
-                              "x": 379,
-                              "y": 2829
-                            },
-                            {
-                              "x": 365,
-                              "y": 2829
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 365,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 379,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 379,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 365,
-                                  "y": 2829
-                                }
-                              ]
-                            },
-                            "text": "0"
-                          }
-                        ]
-                      },
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "en"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 408,
-                              "y": 2804
-                            },
-                            {
-                              "x": 453,
-                              "y": 2804
-                            },
-                            {
-                              "x": 453,
-                              "y": 2829
-                            },
-                            {
-                              "x": 408,
-                              "y": 2829
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 408,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 423,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 423,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 408,
-                                  "y": 2829
-                                }
-                              ]
-                            },
-                            "text": "Y"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 423,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 437,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 437,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 423,
-                                  "y": 2829
-                                }
-                              ]
-                            },
-                            "text": "O"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "EOL_SURE_SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 438,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 453,
-                                  "y": 2804
-                                },
-                                {
-                                  "x": 453,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 438,
-                                  "y": 2829
-                                }
-                              ]
-                            },
-                            "text": "U"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "blockType": "TEXT"
-              },
-              {
-                "property": {
-                  "detectedLanguages": [
-                    {
-                      "languageCode": "en"
-                    }
-                  ]
-                },
-                "boundingBox": {
-                  "vertices": [
-                    {
-                      "x": 213,
-                      "y": 2821
-                    },
-                    {
-                      "x": 264,
-                      "y": 2821
-                    },
-                    {
-                      "x": 264,
-                      "y": 2842
-                    },
-                    {
-                      "x": 213,
-                      "y": 2842
-                    }
-                  ]
-                },
-                "paragraphs": [
-                  {
-                    "property": {
-                      "detectedLanguages": [
-                        {
-                          "languageCode": "en"
-                        }
-                      ]
-                    },
-                    "boundingBox": {
-                      "vertices": [
-                        {
-                          "x": 213,
-                          "y": 2821
-                        },
-                        {
-                          "x": 264,
-                          "y": 2821
-                        },
-                        {
-                          "x": 264,
-                          "y": 2842
-                        },
-                        {
-                          "x": 213,
-                          "y": 2842
-                        }
-                      ]
-                    },
-                    "words": [
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "en"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 213,
-                              "y": 2821
-                            },
-                            {
-                              "x": 264,
-                              "y": 2821
-                            },
-                            {
-                              "x": 264,
-                              "y": 2842
-                            },
-                            {
-                              "x": 213,
-                              "y": 2842
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 213,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 224,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 224,
-                                  "y": 2842
-                                },
-                                {
-                                  "x": 213,
-                                  "y": 2842
-                                }
-                              ]
-                            },
-                            "text": "3"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 224,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 236,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 236,
-                                  "y": 2842
-                                },
-                                {
-                                  "x": 224,
-                                  "y": 2842
-                                }
-                              ]
-                            },
-                            "text": "9"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 237,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 249,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 249,
-                                  "y": 2842
-                                },
-                                {
-                                  "x": 237,
-                                  "y": 2842
-                                }
-                              ]
-                            },
-                            "text": "2"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "EOL_SURE_SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 250,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 264,
-                                  "y": 2821
-                                },
-                                {
-                                  "x": 264,
-                                  "y": 2842
-                                },
-                                {
-                                  "x": 250,
-                                  "y": 2842
-                                }
-                              ]
-                            },
-                            "text": "9"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "blockType": "TEXT"
-              },
-              {
-                "property": {
-                  "detectedLanguages": [
-                    {
-                      "languageCode": "en"
-                    }
-                  ]
-                },
-                "boundingBox": {
-                  "vertices": [
-                    {
-                      "x": 392,
-                      "y": 2829
-                    },
-                    {
-                      "x": 535,
-                      "y": 2829
-                    },
-                    {
-                      "x": 535,
-                      "y": 2860
-                    },
-                    {
-                      "x": 392,
-                      "y": 2860
-                    }
-                  ]
-                },
-                "paragraphs": [
-                  {
-                    "property": {
-                      "detectedLanguages": [
-                        {
-                          "languageCode": "en"
-                        }
-                      ]
-                    },
-                    "boundingBox": {
-                      "vertices": [
-                        {
-                          "x": 392,
-                          "y": 2829
-                        },
-                        {
-                          "x": 535,
-                          "y": 2829
-                        },
-                        {
-                          "x": 535,
-                          "y": 2860
-                        },
-                        {
-                          "x": 392,
-                          "y": 2860
-                        }
-                      ]
-                    },
-                    "words": [
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "sw"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 392,
-                              "y": 2829
-                            },
-                            {
-                              "x": 482,
-                              "y": 2829
-                            },
-                            {
-                              "x": 482,
-                              "y": 2860
-                            },
-                            {
-                              "x": 392,
-                              "y": 2860
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 392,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 404,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 404,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 392,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "S"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 405,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 416,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 416,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 405,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "A"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 416,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 430,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 430,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 416,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "F"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 431,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 443,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 443,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 431,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "E"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 443,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 455,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 455,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 443,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "W"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 456,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 470,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 470,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 456,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "A"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 471,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 482,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 482,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 471,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "Y"
-                          }
-                        ]
-                      },
-                      {
-                        "property": {
-                          "detectedLanguages": [
-                            {
-                              "languageCode": "en"
-                            }
-                          ]
-                        },
-                        "boundingBox": {
-                          "vertices": [
-                            {
-                              "x": 494,
-                              "y": 2829
-                            },
-                            {
-                              "x": 535,
-                              "y": 2829
-                            },
-                            {
-                              "x": 535,
-                              "y": 2860
-                            },
-                            {
-                              "x": 494,
-                              "y": 2860
-                            }
-                          ]
-                        },
-                        "symbols": [
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 494,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 508,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 508,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 494,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "C"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ]
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 508,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 520,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 520,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 508,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "o"
-                          },
-                          {
-                            "property": {
-                              "detectedLanguages": [
-                                {
-                                  "languageCode": "en"
-                                }
-                              ],
-                              "detectedBreak": {
-                                "type": "EOL_SURE_SPACE"
-                              }
-                            },
-                            "boundingBox": {
-                              "vertices": [
-                                {
-                                  "x": 521,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 535,
-                                  "y": 2829
-                                },
-                                {
-                                  "x": 535,
-                                  "y": 2860
-                                },
-                                {
-                                  "x": 521,
-                                  "y": 2860
-                                }
-                              ]
-                            },
-                            "text": "M"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "blockType": "TEXT"
               }
             ]
           }
         ],
-        "text": "SAFEWAY\nSTORE MGR STEVE BERGER 503-738-4700\nTHANK YOU FOR SHOPPING WITH US\nGROCERY\n69 F\nSFY DICED TOM\n79\nRe 9P\nCe\nCard Savings\n49 F\nSFY BLACK BEANS\n99 F\nSFY GRT NRTHRN BNS\nRAISIN BRAN\n2 QTY\n7.98\nRe 9Price\nCard Savings\n4.40\n40\nMfr CP\n2, 38 F\n2 QTY\nK LLGG CRI, BRY FRU\n8, 38\nReg Price\n4.00\nd Sav\n2.00\nMf\nCP\n2.99 F\nKELOGG CEREAL\n3.99\nReg Price\n00\nMfr CP\nGROC NONEDIBLE\n5.49\nSF WY SOFTLY BATH\n6.99\nReg Price\nCard S\n50\nREFRIG/FROZEN\n3.00 F\n2 QTY\nHALF & HALF\nRe 9 Price\n3.98\nCard Savings\n2.49 F\nDAIRY GLEN WHOLE MI\nGEN MERCHANDISE\nHME CARE GMHBC CPN\n00 F\nReg Price\nCard Savings\n4.47\nPINE SOL CLEANER L\nRegP rice\n97\nCard Savings\n3.00\nStore CPn\n4.50\nPRODUCE\n4.06 lb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nRegP\n2.40\nCard Savings\n38\n5,08 l b e $0.25/lb\nJUMBO YLW ONIONS\n27 F\nReg Price\n3.00\nCard Savings\n73\n4.09\nb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nReg Price\n2.4\nCard Savings\n39\n4.26 lb $0.25/lb\nWT\nJUMBO YLW ONIONS\n07 F\nRe 9Price\n2.5\nCard Savings\n44\n0, 79\nCILANTRO\n79 F\nADD'L DISCOUNTS\nSC\n$1 OFF $5 PRODUCE\n00-F\nSC\nGROCERY\n2.00-F\n00\nMC OP SCANNED COUPON\n2.00\nMC OP SCANNED COUPON\n50\nTAX\n000 BAL\n25, 84\nCASH\n40.00\nCHANGE\nNUMBER\nEMS\n9:50 1260 03 0216 1064\nYOUR CASHIER TODAY WAS STEPHANIE\nJAI MERRILL\n4680\n93\n40\n34, 33\nTotol s\nValue\n57x\ncumulated\nEAR\n0 YOU\n3929\nSAFEWAY CoM\n"
+        "text": "SAFEWAY\nSTORE MGR STEVE BERGER 503-738-4700\nTHANK YOU FOR SHOPPING WITH US\nGROCERY\n69 F\nSFY DICED TOM\n79\nRe 9P\nCe\nCard Savings\n49 F\nSFY BLACK BEANS\n99 F\nSFY GRT NRTHRN BNS\nRAISIN BRAN\n2 QTY\n7.98\nRe 9Price\nCard Savings\n4.40\n40\nMfr CP\n2, 38 F\n2 QTY\nK LLGG CRI, BRY FRU\n8, 38\nReg Price\n4.00\nd Sav\n2.00\nMf\nCP\n2.99 F\nKELOGG CEREAL\n3.99\nReg Price\n00\nMfr CP\nGROC NONEDIBLE\n5.49\nSF WY SOFTLY BATH\n6.99\nReg Price\nCard S\n50\nREFRIG/FROZEN\n3.00 F\n2 QTY\nHALF & HALF\nRe 9 Price\n3.98\nCard Savings\n2.49 F\nDAIRY GLEN WHOLE MI\nGEN MERCHANDISE\nHME CARE GMHBC CPN\n00 F\nReg Price\nCard Savings\n4.47\nPINE SOL CLEANER L\nRegP rice\n97\nCard Savings\n3.00\nStore CPn\n4.50\nPRODUCE\n4.06 lb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nRegP\n2.40\nCard Savings\n38\n5,08 l b e $0.25/lb\nJUMBO YLW ONIONS\n27 F\nReg Price\n3.00\nCard Savings\n73\n4.09\nb $0.25/lb\nJUMBO YLW ONIONS\n02 F\nReg Price\n2.4\nCard Savings\n39\n4.26 lb $0.25/lb\nWT\nJUMBO YLW ONIONS\n07 F\nRe 9Price\n2.5\nCard Savings\n44\n0, 79 CILANTRO\n79 F\nADD'L DISCOUNTS\nSC\n$1 OFF $5 PRODUCE\n00-F\nSC\nGROCERY\n2.00-F\n00\nMC OP SCANNED COUPON\n2.00\nMC OP SCANNED COUPON\n50\nTAX\n000 BAL\n25, 84\nCASH\n40.00\nCHANGE\nNUMBER\nEMS\n9:50 1260 03 0216 1064\nYOUR CASHIER TODAY WAS STEPHANIE\nJAI MERRILL\n4680\n93\n40\n34, 33\nTotal s\ninsu Value\n57x\n"
       }
     }
   ]
