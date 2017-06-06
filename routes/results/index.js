@@ -234,6 +234,7 @@ function processImageByStoreName(image) {
 
 /**
  * Processing function for receipts that are deemed to be from safeway
+ * This is probably also very INEFFICIENT
  */
 function processImageSafeway(image) {
 	// Assume this is a safeway receipt
@@ -254,12 +255,98 @@ function processImageSafeway(image) {
 
 	image._arrayOfLines = image._arrayOfLines.slice(receiptBeginLine, receiptEndLine);
 
-	return image.toString();
+	// Go through the rest of the lines of the receipt, tagging lines that are possible price/product lines
+	// Possible price lines: 
+	// 		- Have a price on the right 1/2 of the receipt
+	
+	var imageMidX = (image._leftX + image._rightX) / 2;
+	var things_bought = [];
+	for (var i = 0; i < image._arrayOfLines.length; i++) {
+		var item = {}
+		var lastIndexUntilPrice = 99999;
+		for (var k = 0; k < image._arrayOfLines[i]._arrayOfBlocks.length; k++) {
+			var currBlock = image._arrayOfLines[i]._arrayOfBlocks[k];
+
+			if (currBlock._midX > imageMidX) {
+				// Block is on the right side
+				if (getNumberVersion(currBlock._contents) != false) {
+					if (k < lastIndexUntilPrice) {
+						lastIndexUntilPrice = k;
+					}
+
+					if (item.price != undefined) {
+						// Didnt picked up the "."
+						item.price = item.price + ("." + currBlock._contents);
+					} else {
+						item.price = getNumberVersion(currBlock._contents);
+					}
+				} 
+			}
+		}
+
+		if (item.price != undefined) {
+			if (lastIndexUntilPrice >  image._arrayOfLines[i]._arrayOfBlocks.length) {
+				console.log("Something went wrong. Aborting")
+				console.log("lastIndexUntilPrice = " + lastIndexUntilPrice)
+			}
+			// Need to extract all of the things until lastIndexUntilPrice
+			for (var k = 0; k < lastIndexUntilPrice; k++) {
+				var currBlock = image._arrayOfLines[i]._arrayOfBlocks[k];
+				if (item.name == undefined) {
+					item.name = currBlock._contents
+				} else {
+					item.name = item.name + " " + currBlock._contents;
+				}
+			}
+		}
+
+		if (item.price != undefined && item.name != undefined) {
+			// Push a copy
+			things_bought.push(JSON.parse(JSON.stringify(item)));
+			item = {}
+		}
+	}
+
+	consoleLogArray(things_bought);
+
+	return "Done"
 }
+
+
 
 /**
  *  ############################### HELPER METHODS ##################################
  */
+
+/**
+ * Returns the number for: 
+ * 		- 1
+ *   	- 12
+ * 		- .12
+ * 		- 1.2
+ * 		- 12.
+ * Returns false for invalid numbers
+ */
+function getNumberVersion(str) {
+	if (!isNaN(str)) {
+		return 0 + str
+	} else {
+		return false;
+	}
+}
+
+/**
+ * For testing. All it does is console.logs an array in a way that is readable
+ */
+function consoleLogArray(arr) {
+	console.log("[")
+	
+	for(var i = 0; i < arr.length; i++) {
+		console.log(arr[i]);
+	}
+
+	console.log("]")
+}
 
 /**
  * Calculates the distance between two string vectors using the Levenshtein distance
@@ -356,15 +443,6 @@ class Block {
 		 this._height = height;
 	 }
 }
-
-class TextBlock extends Block{
-	// Will implement later	
-}
-
-class PriceBlock extends Block{
-	// Will implement later
-}
-
 
 /**
  *  ############################### END HELPER METHODS ##################################
